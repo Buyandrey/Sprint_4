@@ -22,14 +22,19 @@ public class AccountNameToEmbossTest {
     @Parameterized.Parameters
     public static Object[][] getNames() {
         return new Object[][] {
-                {"Тимоти Шаломе", true},
-                {" ТимотиШаломе", false},
-                {"ТимотиШаломе ", false},
-                {" ТимотиШаломе ", false},
-                {"ТимотиШаломе", false},
+                {"Sean Young", true},
+                {"S Y", true},
+                {"SeanYoung SeanYoung", true},
+                {"SeanYoung SeanYoungS", false},
+                {" SeanYoung", false},
+                {"SeanYoung  ", false},
+                {" SeanYoung ", false},
+                {"SeanYoung", false},
+                {" Sean Young", false},
+                {"Sean Young ", false},
                 {null, false},
                 {"",false},
-                {"Т", false}
+                {"S", false}
         };
     }
     @DisplayName("Проверка метода checkNameToEmboss")
