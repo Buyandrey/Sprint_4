@@ -29,11 +29,11 @@ public class AccountSpaceCountTest {
         };
     }
 
-    @DisplayName("Проверка колличества пробелов")
-    @Description("Параметризованный тест, проверяющий метод проверки колличества пробелов")
+    @DisplayName("Проверка количества пробелов")
+    @Description("Параметризованный тест, проверяющий метод проверки количества пробелов")
     @Test
     public void onlyOneSpaceInTheStringTest(){
         Account account = new Account(name);
-        assertEquals("Удовлетворительное колличество пробелов",isOk,account.checkThatIsOnlyOneSpaceInTheString());
+        assertEquals("Удовлетворительное количество пробелов",isOk,account.checkThatIsOnlyOneSpaceInTheString());
     }
 }

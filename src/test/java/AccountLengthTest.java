@@ -29,11 +29,11 @@ public class AccountLengthTest {
                 {"twentyTwentyTwentyTw"     , false},//20
         };
     }
-    @DisplayName("Проверка длинны строки")
+    @DisplayName("Проверка длины строки")
     @Description("Параметризованный тест, проверяющий метод проверки длинны строки")
     @Test
     public void LengthOfTheStringMoreThenThreeAndLessThenNineteenTest(){
         Account account = new Account(name);
-        assertEquals("Удовлетворительна ли длинна",isOk,account.checkLengthOfTheStringMoreThenThreeAndLessThenNineteen());
+        assertEquals("Удовлетворительна ли длина",isOk,account.checkLengthOfTheStringMoreThenThreeAndLessThenNineteen());
     }
 }
