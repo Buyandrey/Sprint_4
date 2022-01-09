@@ -30,7 +30,7 @@ public class AccountLengthTest {
         };
     }
     @DisplayName("Проверка длины строки")
-    @Description("Параметризованный тест, проверяющий метод проверки длинны строки")
+    @Description("Параметризованный тест, проверяющий метод проверки длины строки")
     @Test
     public void LengthOfTheStringMoreThenThreeAndLessThenNineteenTest(){
         Account account = new Account(name);
